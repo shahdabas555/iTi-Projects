@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #801f82;
+    --color2: #ff9dcf;
+    --color3: white;
+}
+
+.container1 {
+    background-color: var(--color2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container2 {
+    width: 85%;
+    height: 85vh;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    padding: 0 40px 0 80px;
+    border: 3px solid rgba(255, 255, 255, 0.486);
+    border-radius: 20px;
+}
+
+.container2 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.container2 .logo {
+    color: var(--color1);
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.container2 .links {
+    display: inline;
+}
+
+.link1,
+.link2,
+.link3,
+.link4 {
+    text-decoration: none;
+    color: var(--color3);
+    margin-left: 40px;
+}
+
+.links a:hover {
+    color: var(--color1);
+}
+
+.container3 {
+    width: 50%;
+    float: left;
+}
+
+.container3 .short-content {
+    color: var(--color3);
+}
+
+.container3 .main-address {
+    font-family: cursive;
+    color: var(--color1);
+}
+
+.container3 .content {
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container3 .shape {
+    text-decoration: none;
+    background-color: var(--color1);
+    color: var(--color3);
+    border: 2px solid #801f82;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container3 .shape:hover {
+    transition: 0.3s;
+    background-color: var(--color2);
+}
+
+.container-img {
+    width: 40%;
+    float: right;
+}
+
+.image {
+    border-radius: 50%;
+    border: 2px solid pink;
+    width: 300px;
+    height: 300px;
+}
