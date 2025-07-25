@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --firstColor:#f0f0f0;
+    --secondColor: white;
+    --thirdColor: #007BFF;
+    --fourthColor: #0056b3;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--firstColor);
+}
+
+.container {
+    background-color: var(--secondColor);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#taskInput {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: var(--thirdColor);
+    color: var(--secondColor);
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: var(--fourthColor);
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li span {
+    flex-grow: 1;
+    margin-right: 100px;
+}
