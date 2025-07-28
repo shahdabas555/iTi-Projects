@@ -3,17 +3,14 @@
 function addTask() {
     let taskInput = document.getElementById("taskInput");
     let taskText = taskInput.value.trim();
-
     let task = {
         id: Date.now(),
         text: taskText,
         completed: false
     };
-
     let tasks = getTasks();
     tasks.push(task);
     saveTasks(tasks);
-
     taskInput.value = "";
     renderTasks();
 }
